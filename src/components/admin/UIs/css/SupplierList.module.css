@@ -1,0 +1,13 @@
+.supplier-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .supplier-content{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+}

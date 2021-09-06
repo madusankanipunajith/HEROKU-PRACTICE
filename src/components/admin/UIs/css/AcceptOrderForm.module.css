@@ -1,0 +1,103 @@
+.order-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 8px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+.x{
+    background-color: rgb(136, 124, 75);
+    box-shadow: 5px 5px 13px #ebd282, -5px -5px 13px #f1e890;
+}
+.order-form-content{
+    display: grid;
+    grid-template-columns: .8fr 2fr 1fr 1fr;
+    gap: 20px;
+}
+.material{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.material h1{
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.color-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+.form-add-input{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accept-order button{
+    padding: 15px;
+    width: 100px;
+    background-color: rgb(15, 112, 15);
+    color: azure;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+.color-batch{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px #f8eecb, -2px -2px 5px #f1e890;
+}
+
+.select {
+    appearance: none;
+    outline: 0;
+    background: rgb(218, 224, 218);
+    background-image: none;
+    width: 100%;
+    height: 30px;
+    color: black;
+    cursor: pointer;
+    border:1px solid black;
+    border-radius:10px;
+    
+}
+
+.accept-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-bottom{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.rejected-order{
+    text-align: center;
+}
+.rejected-order button{
+    padding: 10px;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: brown;
+}
+.date{
+    margin-left: 30px;
+}
+.cost{
+    margin-right: 70px;
+}

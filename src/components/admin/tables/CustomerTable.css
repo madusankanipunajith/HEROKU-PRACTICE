@@ -1,0 +1,21 @@
+.customer-delete, .qurior-delete{
+    margin-left: 30px;
+    color: red;
+    cursor: pointer;
+}
+.qurior-edit{
+    color: green;
+    cursor: pointer;
+}
+.customer-gender, .customer-telephone{
+    display: flex;
+    align-items: center;
+}
+.gender-icon{
+    margin-left: 15px;
+}
+.qurior-action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

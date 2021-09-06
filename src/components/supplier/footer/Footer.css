@@ -1,0 +1,22 @@
+.footer-icon-gold {
+    margin: 10px;
+    font-size: 2em;
+}
+
+footer{
+    margin-top: 50px;
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+footer> div> p, footer> div > div > p{
+    font-size: smaller;
+    color: #887136;
+    line-height: 2em;
+    margin-left: 1vw;
+    font-weight: 600;
+} 

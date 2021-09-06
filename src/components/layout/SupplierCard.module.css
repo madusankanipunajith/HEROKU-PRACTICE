@@ -1,0 +1,81 @@
+.supplier-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+    padding: 0px 25px 20px 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card-content > label, .card-content > div{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.supplier-material{
+    height: auto;
+    line-height: 10px;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    line-height: initial;
+}
+li{
+    list-style: none;
+    margin-right: 10px;
+}
+.icons{
+    width: 70px;
+}
+.card-content > label > div > i{
+    margin-right: 20px;
+
+}
+
+.card-action{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    align-items: flex-end;
+}
+.supplier-edit > button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: green;
+    color: azure;
+}
+.supplier-delete > button{
+    border: none;
+    width: 150px;
+    padding: 10px;
+    background: red;
+    color: azure;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .supplier-card{
+        padding: 10px 5px 10px 5px;
+        box-shadow: 5px 5px 13px #d3cdcd, -5px -5px 13px #cecaca;
+        min-height: 360px;
+        height: auto;
+    }
+    .supplier-material .list{
+        grid-template-columns: 1fr 1fr;
+        line-height: initial;
+    }
+}

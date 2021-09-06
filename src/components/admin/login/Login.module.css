@@ -1,0 +1,86 @@
+.admin-login-body{
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2021/04/03/02/21/fashion-6146328_960_720.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.admin-form{
+    display: flex;
+    flex-direction: column;
+}
+.admin-login-container{
+    padding: 25px;
+    border-radius: 5px;
+    background: #f3f4f6;
+    /*box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;*/
+    width: 320px;
+    height: fit-content;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+.admin-login-container >h1{
+    text-align: center;
+    padding: 0 0 20px;
+    margin-top: 25px;
+}
+.admin-form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.admin-form-content> label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 10px;
+}
+.login-input{
+    display: block;
+    width: 90%;
+    height: 46px;
+    padding: 0 5px;
+    border-radius: 10px;
+    border-color: rgb(69, 82, 34);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.login-input:focus{
+    outline: none;
+    border-color: gold;
+}
+
+.admin-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.admin-login-button{
+    text-align: center;
+    margin-top: 20px;
+}
+.admin-login-button > button{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: indigo;
+    color: azure;
+}
+.lost-password{
+    margin-top: 20px;
+    text-align: center;
+}

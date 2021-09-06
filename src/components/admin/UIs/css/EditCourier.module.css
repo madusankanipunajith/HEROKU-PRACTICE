@@ -1,0 +1,41 @@
+.form-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    height: 300px;
+}
+.exist-vehicle{
+    text-align: center;
+}
+.vehicle-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 25px;
+}
+.vehicle-checkbox{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.button{
+    padding: 10px;
+    background: green;
+    color: azure;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+}
+
+@media only screen and (max-width: 468px){
+    .form-content{
+        grid-template-columns: 1fr;
+    }
+    .exist-vehicle{
+        margin-top: 20px;
+    }
+    .button{
+        margin-top: 25px;
+    }
+}

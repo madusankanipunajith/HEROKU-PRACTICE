@@ -1,0 +1,137 @@
+.complaints-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.complaints-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+.filter{
+    padding-bottom: 20px;
+}
+.complaints-card-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.card-topic{
+    background: rgb(136, 113, 54);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.personal-info, .date-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+.card-body{
+    padding-top: 20px;
+    background: azure;
+    color: black;
+    font-weight: 500;
+    height: fit-content;
+}
+.card-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    margin-top: 25px;
+    cursor: pointer;
+    width: 300px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    color: azure;
+}
+.button2{
+    margin-left: 10px;
+    width: 100px;
+    border: none;
+    color: azure;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 5px 2px;
+}
+h2{
+    margin-top: 5px !important;
+    color: black;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.search-bar >span{
+    color: #2e4a66;
+    font-weight: 600;
+    font-size: 18px;
+}
+.search-bar > input{
+    width: 30%;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.search-bar >input:focus{
+    border-radius: 10px;
+    border: 1px solid purple;
+    outline: none;
+}
+@media only screen and (max-width: 768px){
+    .card-topic{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .complaints-main-container{
+        padding: 20px 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 90%;
+        padding: 25px 10px;
+    }
+    .button{
+        width: 250px;
+    }
+    .button2{
+        margin-bottom: 10px;
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-bar > span{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .search-bar > input{
+        width: 70%;
+    }
+    
+}

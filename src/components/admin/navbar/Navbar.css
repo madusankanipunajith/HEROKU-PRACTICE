@@ -1,0 +1,78 @@
+.navbar{
+    background: black;
+    grid-area: nav;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    border-bottom: 1px solid lightgray;
+}
+
+.fa-stack[data-count]:after{
+    position:absolute;
+    right:0%;
+    top:1%;
+    color: white;
+    background:rgba(255,0,0,.85);
+    content: attr(data-count);
+    font-size:50%;
+    padding:.6em;
+    border-radius:999px;
+    line-height:.75em;
+    text-align:center;
+    min-width:2em;
+    font-weight:bold;
+}
+
+.navbar-left > a {
+    color: gold;
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.navbar-left .active-link{
+    color: white;
+    border-bottom: 3px solid lightgrey;
+    padding-bottom: 12px;
+}
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-right > a{
+    color: gold;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.navbar-right > a > i{
+    font-size: 16px;
+    border-radius: 50px;
+    background: transparent;
+    padding: 7px;
+}
+.nav-icon{
+    display: none;
+}
+.nav-icon > i{
+    font-size: 26px;
+    color: white;
+}
+.nav-img{
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 768px){
+    .nav-icon{
+        display: inline;
+    }
+}
+@media only screen and (max-width: 480px){
+    .navbar-left{
+        display: none;
+    }
+}

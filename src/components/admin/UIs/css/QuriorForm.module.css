@@ -1,0 +1,110 @@
+.qurior-form-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.qurior-form-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+.qurior-form-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin: 15px 0 20px 0;
+}
+.qurior-form{
+    margin-top: 0px;
+}
+.qurior-form-left{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.qurior-form-right{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.qurior-form-right-item{
+    display: flex;
+    align-items: center;
+}
+.qurior-form-left > h2, .qurior-form-right > h2{
+    color: #2e4a66;
+    margin-bottom: 5px;
+    size: 18px !important;
+}
+.qurior-add-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.qurior-add-item>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 10px;
+}
+.qurior-add-input{
+    display: block;
+    width: 70%;
+    height: 46px;
+    padding: 0 5px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(69, 82, 34);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.qurior-add-input:focus{
+    outline: none;
+    border-color: rgb(221, 218, 19);
+}
+.qurior-form-label{
+    cursor: text;
+    text-transform: capitalize;
+}
+.qurior-button{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.qurior-add-button{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 94, 127);
+    color: azure;
+}
+.qurior-add-button:hover{
+    background-color: rgb(11, 53, 77);
+}
+
+@media only screen and (max-width: 768px){
+    .qurior-form-content{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .qurior-form-main-container{
+        padding: 10px 5px;
+    }
+    .qurior-add-input{
+        width: 90%;
+    }
+}

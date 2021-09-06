@@ -1,0 +1,37 @@
+.notfound{
+    grid-template-columns: 1fr;
+    grid-area: main;
+    background-color: rgb(112, 112, 108);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    color: white;
+    font-size: 22px;
+    margin-top: 15px;
+    padding: 0 10px;
+    font-weight: 700;
+}
+.notfound > .content > img{
+    width: 40%;
+    height: 40%;
+}
+.suggesion{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+    width: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+

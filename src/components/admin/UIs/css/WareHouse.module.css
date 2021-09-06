@@ -1,0 +1,45 @@
+.admin-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.admin-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+.filter{
+    margin-left: 20%;
+}
+.filter-select{
+    padding: 15px;
+    border: 1px solid rgb(71, 66, 66);
+    border-radius: 1px;
+}
+.button{
+    margin-left: 100px;
+    background-color: maroon;
+    color: azure;
+    padding: 15px;
+    border: none; 
+    cursor: pointer;            
+}
+
+
+@media only screen and (max-width: 768px){
+    .admin-main-container{
+        padding: 20px 15px 20px 15px;
+        flex-grow: 1;
+    }
+
+    .filter{
+        margin-left: 2%;
+    }
+    .filter-select{
+        padding: 5px;
+    }
+    .button{
+        display: none;
+    }
+}

@@ -1,0 +1,206 @@
+.profile{
+    grid-area: main;
+}
+.profile-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+.profile-content-left{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+
+
+
+.profile-content-right{
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.profile-content-left > h2, .profile-content-right > h2{
+    color: #2e4a66;
+    margin-bottom: 5px;
+}
+.admin-show-top{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.admin-show-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.admin-show-top-title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.admin-show-username{
+    font-weight: 600;
+}
+.admin-show-title{
+    color: #2e4a66;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-show-bottom{
+    margin-top: 20px;
+}
+.admin-show-bottom-title{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e4a66;
+}
+.admin-show-info{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: #444;
+}
+.admin-show-info-title{
+    margin-left: 10px;
+}
+
+.admin-update{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.admin-update-form{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.admin-update-left{
+    display: flex;
+    flex-direction: column;
+}
+.admin-update-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-update-right > button, .admin-password-change button{
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 94, 127);
+    color: azure;
+    cursor: pointer;
+}
+.admin-update-right > button:hover, .admin-password-change button:hover{
+    background-color: rgb(11, 53, 77);
+}
+.admin-update-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.admin-update-item>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.admin-update-input{
+    border: none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+.admin-password-input:focus, .admin-update-input:focus{
+    outline: none;
+    border-color: rgb(221, 218, 19);
+}
+.admin-update-upload{
+    display: flex;
+    align-items: center;
+}
+.admin-update-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.admin-update-icon{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.admin-password-change{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.admin-password-change h2{
+    color: #2e4a66;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.admin-password-input{
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+@media only screen and (max-width: 768px){
+    .profile-content{
+        grid-template-columns: 1fr;
+    }
+    .admin-update-img{
+        width: 100px;
+        height: 100px;
+    }
+    .admin-update-form{
+        grid-template-columns: 1fr;
+    }
+    .admin-password-input{
+        width: 100%;
+    }
+    .filepond--root {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: inherit;
+    }
+    .filepond--wrapper{
+        margin-left: -15px !important;
+        margin-right: auto !important;
+        width: 150px;
+        height: 150px;
+       
+    }
+    .filepond--assistant{
+        width: 80%;
+        height: 80%;
+    }
+    .admin-update-right{
+        justify-content: center;
+    }
+    .filepond--root,
+    .filepond--root .filepond--drop-label {
+        height: 150px;
+    }
+    .admin-update-right > button{
+        margin-top: 100px;
+    }
+    .user-update-button{
+        bottom: 0px;
+    }
+}

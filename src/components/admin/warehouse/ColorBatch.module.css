@@ -1,0 +1,9 @@
+.batch-body{
+  height: 13px;
+  width: 13px;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}

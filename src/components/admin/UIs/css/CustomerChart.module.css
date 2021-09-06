@@ -1,0 +1,29 @@
+.customer-chart-content{
+    margin: 20px 0;
+}
+.button{
+    margin-left: 300px;
+    background-color: maroon;
+    color: azure;
+    padding: 15px;
+    border: none;       
+}
+.top-customers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+.heading> h2{
+    text-align: center;
+    margin-top: -15px !important;
+    color: #2e4a66;
+    margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px){
+    .button{
+        display: none;
+    }
+    .top-customers{
+        grid-template-columns: 1fr;
+    }
+}

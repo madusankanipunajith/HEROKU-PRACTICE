@@ -1,0 +1,90 @@
+.supervisor-form-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.supervisor-form-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+.supervisor-form-content{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffff;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.supervisor-form-content > h2{
+    text-align: left;
+    padding: 10px 5px;
+    margin-top: 0px;
+    text-decoration-color: black;
+    color: #2e4a66;
+}
+.supervisor-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.supervisor-add-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.supervisor-add-item>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 10px;
+}
+.supervisor-add-input{
+    display: block;
+    width: 90%;
+    height: 46px;
+    padding: 0 5px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(69, 82, 34);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.supervisor-add-input:focus{
+    outline: none;
+    border-color: rgb(221, 218, 19);
+}
+.supervisor-form-label{
+    cursor: text;
+    text-transform: capitalize;
+}
+
+.supervisor-add-button{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 94, 127);
+    color: azure;
+}
+.supervisor-add-button:hover{
+    background-color: rgb(11, 53, 77);
+}
+
+@media only screen and (max-width: 768px){
+    .supervisor-form{
+        grid-template-columns: 1fr;
+    }
+    .supervisor-form-content{
+        padding: 0px;
+    }
+    .supervisor-form-main-container{
+        padding: 20px 10px;
+    }
+}

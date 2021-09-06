@@ -1,0 +1,41 @@
+.heading{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.heading > h2{
+    text-align: center;
+    color: #2e4a66;
+    margin-bottom: 5px;
+}
+.body-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.button{
+    margin-left: 300px;
+    background-color: maroon;
+    color: azure;
+    padding: 15px;
+    border: none;             
+}
+.button-responsive{
+    display: none;
+}
+@media only screen and (max-width: 468px){
+    .body-1{
+        grid-template-columns: 1fr;
+    }
+    .button{
+        display: none;
+    }
+    .button-responsive{
+        display: inherit;
+       margin-top: 30px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .heading{
+        margin-top: 30px;
+    }
+}

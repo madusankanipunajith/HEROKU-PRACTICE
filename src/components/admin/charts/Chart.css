@@ -1,0 +1,18 @@
+.chart{
+    margin-top: 15px;
+}
+.chart-responsive{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .responsive-chart-customer{
+        margin-top: 60px;
+    }
+    .chart{
+        display: none;
+    }
+    .chart-responsive{
+        display: inline;
+        margin-top: 15px;
+    }
+}

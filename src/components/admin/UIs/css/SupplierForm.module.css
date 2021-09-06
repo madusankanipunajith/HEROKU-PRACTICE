@@ -1,0 +1,123 @@
+.supplier-form-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.supplier-form-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+.supplier-form-content{
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+}
+.supplier-form-content  h2{
+    text-align: left;
+    padding: 10px 5px;
+    margin-top: 0px;
+    text-decoration-color: black;
+    color: #2e4a66;
+}
+.supplier-add-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.supplier-add-item>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 10px;
+}
+.supplier-add-input{
+    display: block;
+    width: 60%;
+    height: 46px;
+    padding: 0 5px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(69, 82, 34);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.supplier-add-input:focus{
+    outline: none;
+    border-color: rgb(221, 218, 19);
+}
+.supplier-button{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.supplier-add-button{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 200px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(19, 94, 127);
+    color: wheat;
+}
+.supplier-add-button:hover{
+    background-color: rgb(11, 53, 77);
+}
+.material-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15;
+}
+.material-content{
+    display: flex;
+    align-items: center;
+}
+.supplier-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.supplier-phone, .supplier-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.supplier-phone > .supplier-add-input, .supplier-mobile > .supplier-add-input{
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px){
+    .supplier-form-main-container{
+        padding: 20px 5px;
+    }
+    .supplier-add-input{
+        width: 90%;
+    }
+    .supplier-form-content  h2{
+        padding-bottom: 20px;
+    }
+    .supplier-form-content{
+        padding: 0 25px;
+    }
+    .material-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .material-content{
+        flex-direction: column;
+    }
+    .supplier-contact{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}

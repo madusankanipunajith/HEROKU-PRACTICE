@@ -1,0 +1,64 @@
+.add-product-main{
+    background: #f3f4f6;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.add-product-main-container{
+    padding: 20px 35px;
+    flex-grow: 1;
+}
+
+.color-batch{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    margin-top: 20px;
+    width: 100%
+}
+.search-bar > input{
+    width: 30%;
+    height: 40px;
+    padding: 2px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.search-bar >input:focus{
+    border-radius: 10px;
+    border: 1px solid purple;
+    outline: none;
+}
+.button{
+    margin-left: 500px;
+    background-color: maroon;
+    color: azure;
+    padding: 15px;
+    border: none;   
+    cursor: pointer;          
+}
+
+@media only screen and (max-width: 768px){
+    .add-product-main-container{
+        padding: 20px 5px;
+    }
+
+    .search-bar{
+        flex-direction: column;
+        
+    }
+    .search-bar >input{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5px;
+    }
+    .search-bar >span{
+        font-size: 16px;
+    }
+    .button{
+        display: none;
+    }
+}

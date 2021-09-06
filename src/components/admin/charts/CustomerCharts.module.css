@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px){
+    .responsive-chart-customer{
+        margin-top: 60px;
+        width: 90%;
+        height: 100%;
+    }
+    .responsive-chart-customer > PieChart{
+        height: 800px !important;
+    }
+   
+}

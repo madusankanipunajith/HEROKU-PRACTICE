@@ -1,0 +1,36 @@
+.header{
+    width: 90%;
+    background: rgb(119, 73, 73);
+    color: azure;
+    margin-bottom: 10px;
+}
+.body{
+    color: black;
+    font-weight: 400;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirm{
+    margin-top: 30px;
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: azure;
+    cursor: pointer;
+}
+.discard{
+    margin-top: 30px;
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: azure;
+    cursor: pointer;
+}
